@@ -18,7 +18,6 @@ const HTML_STRING = @"<!DOCTYPE html><html lang='en-US'><meta charset='UTF-8'>
     <script>
         var agenturl = '%s';
         
-        
         function getCount(callback) {
             const xhr = new XMLHttpRequest();
             xhr.open('GET', `${agenturl}/count`, true);
@@ -32,6 +31,7 @@ const HTML_STRING = @"<!DOCTYPE html><html lang='en-US'><meta charset='UTF-8'>
         }
         document.addEventListener('DOMContentLoaded', function(event) { 
             getCount();
+            setInterval(getCount, 1000);
         });
     </script>
   </body>
