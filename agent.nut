@@ -7,13 +7,26 @@ const HTML_STRING = @"<!DOCTYPE html><html lang='en-US'><meta charset='UTF-8'>
     <title>What the Founter</title>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <style>
-
+        .count-box {
+            margin: 50px;
+            text-align: center;
+        }
+        .header {
+            text-align: center;
+            font-size: 48px;
+        }
+        .count {
+            font-size: 48px;
+            text-align: center;
+            margin: 
+        }
     </style>
   </head>
   <body>
-    <div class='header'></div>
-    <div class='count'>0</div>
-    
+    <div class='count-box'>
+        <div class='header'><h1>Total WTF Moments:</h1></div>
+        <div class='count'>0</div>
+    </div>
     
     <script>
         var agenturl = '%s';
